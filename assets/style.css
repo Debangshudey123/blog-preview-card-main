@@ -1,0 +1,127 @@
+/* ### Primary
+
+- Yellow: hsl(47, 88%, 63%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Grey: hsl(0, 0%, 50%)
+- Black: hsl(0, 0%, 7%)
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+ :root{
+        --primary: hsl(47, 88%, 63%);    
+        --white:  hsl(0, 0%, 100%);
+        --grey: hsl(0, 0%, 50%);
+        --black: hsl(0, 0%, 7%);
+ }
+ *{
+    margin: 0;
+    box-sizing: border-box;
+    
+ }
+ html{
+    font-size: 16px;
+    font-family: "Figtree", sans-serif;
+ }
+ body{
+    height: 100vh;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;      
+     }
+ .main{
+    width: 384px;
+    height: 522px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 24px 24px;
+    background-color: var(--white);
+    box-shadow: 13px 16px;
+     
+
+}
+.firstCol img{
+    border-radius: 10px;
+    margin-bottom: 24px;
+}
+.firstCol h3{
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 8px 12px;
+    display: inline-block;
+    background-color: var(--primary);
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+.secCol .date{
+    color: var(--black) ;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 12px 0;
+}
+
+.secCol h1{
+    margin: 12px 0;
+    font-weight: bold;
+}
+.def{
+    margin-bottom: 12px;
+    text-align: justify;
+    color: var(--grey);
+}
+.thirdCol{
+    display: flex;
+    align-items: center;
+}
+.avatar img{
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+}
+.thirdCol h2{
+    font-size: 16px;
+    
+}
+.attribution{
+    margin-top: 28px;
+}
+h1:hover{
+    color: var(--primary);
+    cursor: url('images/handcursor.svg'), auto;
+}
+
+
+/* Mobile Version */
+@media  (max-width: 375px) {
+    .main{
+        width: 327px;
+        height: 501px;
+        
+    }
+    .firstCol img{
+            width: 279px;
+            border-radius: 10px; 
+    }
+    .firstCol h3{
+        padding: 4px 10px;
+        font-size: 16px;
+    }
+    .secCol .date{
+        font-size: 14px;
+    }
+    .secCol h1{
+        margin: 12px 0;
+        font-size: 18px;
+        font-weight: 800
+    }
+    .thirdCol{
+        margin-top: 24px;
+    }
+    .attribution{
+        font-size: 10px;
+    }
+}
